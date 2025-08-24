@@ -5,6 +5,8 @@ import java.io.*;
 class Main
 {
 	//two pointers -> constant window type
+	//[-1,2,3,3,4,5,-1]
+	//k= 4
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner scn = new Scanner(System.in);
