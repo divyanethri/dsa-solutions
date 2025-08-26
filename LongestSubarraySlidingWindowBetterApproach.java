@@ -15,7 +15,7 @@ class SlidingWindow3
 		//better approach (generate all the subarrays and check the condition)
 		//[2,5,1,7,10] where k = 14
 		//sorted array
-		//Time Complexity O(n)
+		//Time Complexity O(n + n)
 		//Space Complexity O(1)
 
 		Scanner scn = new Scanner(System.in);
@@ -38,6 +38,10 @@ class SlidingWindow3
 		    sum = sum + arr[r];
 		    //check if we need to move left pointer to right
 		    //if sum > k then subtract that left pointer element from the sum and move the left pointer to right.
+			// while may take n time so the total TC may be 2N
+			//because we are shrinking for small window which length is less than maxLen, it's a waste of time to do this.
+			// As we already found the maxLen we need to check for > maxLen,
+			// We can use this while returning/ printing all the subarrays instead of maxLen
 		    while(sum > k){
 		        
 		        sum = sum - arr[l];
