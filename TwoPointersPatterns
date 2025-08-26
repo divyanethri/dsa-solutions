@@ -1,0 +1,20 @@
+Two pointer/ Sliding Window
+
+There are 4 types/ patterns of sliding window problems
+
+1. Constant Window, where we get k as constant window
+2. Longest Subarray/ Substring where <Condition> -> BruteForce, Better, Optimal
+3. Number of Subarrays where <Condition> -> totally based on the pattern two.
+4. Shortest/ Minimum Window <Condition> 
+
+
+3. Example 
+  Number of Subarrays with sum = k,
+  When there's a constant condition then we can't decide whether to shrink or expand.
+
+  Number of Subarrays where sum<= k          = x 
+  Number of Subarrays where sum <= (k-1)     = y 
+
+  do (x - y)
+
+4. When you get the valid window, then you just shrink the windoww without touching the right pointer.
