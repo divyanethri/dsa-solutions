@@ -12,6 +12,8 @@ class Codechef
 		//consecutive 
 		// input: cadbzabcd
 		//output: 5
+		//Time Complexity: N x N = N2
+		//Space Complexity: K
 		//create a hashmap to store the charcters as keys and Integer as value
 		HashMap<Character, Integer> hmap = new HashMap<Character, Integer>(256);
 		//initialise maxLen to 0
